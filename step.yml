@@ -30,14 +30,14 @@ inputs:
         The default is "such wow,awesome,shipit,yes,panda,cat,hell yeah,applaud,lgtm,surprise,suprise motherfucker,yeah bitches,high five,legendary,lil bub"
       is_expand: true
       is_required: true
-  - api_key: ""
+  - api_key: "dc6zaTOxFJmzC"
     opts:
       title: "Giphy API key"
       description: |
         Provide app API key.
 
         You can create your app at https://developers.giphy.com/dashboard/?create=true.
-        The default is empty, so step will not produce any output.
+        The default is dc6zaTOxFJmzC (publicly available API key), but it usually does not work due to reaching the query limit.
       is_expand: true
       is_required: true
 outputs:
