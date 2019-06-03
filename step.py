@@ -30,7 +30,7 @@ def getGif(gifQuery, apiKey):
   return data[random.randint(0,len(data) - 1)]['images']['fixed_height']['url']
 
 gifName = random.choice(os.environ['gif_words'].split(','))
-apiKey = random.choice(os.environ['api_key'])
+apiKey = os.environ['api_key']
 gif = getGif(gifName, apiKey)
 
 addEnvironmentVariable('GIF_URL', gif)
