@@ -17,7 +17,7 @@ def getJson(url, queryParams):
   return json.load(response)
 
 def getGif(gifQuery, apiKey):
-  baseUrl = 'http://api.giphy.com/v1/gifs/search'
+  baseUrl = 'https://api.giphy.com/v1/gifs/search'
   limit = 100
   queryParams = {
     'q': gifQuery,
