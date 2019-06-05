@@ -7,6 +7,7 @@ import sys
 import os
 
 def addEnvironmentVariable(key, value):
+  print(value)
   subprocess.call(['envman', 'add', '--key', key, '--value', value])
 
 def getJson(url, queryParams):
@@ -30,6 +31,8 @@ def getGif(gifQuery, apiKey):
   return data[random.randint(0,len(data) - 1)]['images']['fixed_height']['url']
 
 gifName = random.choice(os.environ['gif_words'].split(','))
+print(gifName)
+print(os.environ['gif_words'])
 apiKey = os.environ['api_key']
 gif = getGif(gifName, apiKey)
 
